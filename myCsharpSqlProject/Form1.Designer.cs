@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ageText = new System.Windows.Forms.TextBox();
+            this.IDtext = new System.Windows.Forms.TextBox();
+            this.nameText = new System.Windows.Forms.TextBox();
+            this.surnameText = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.femaleRadio = new System.Windows.Forms.RadioButton();
+            this.maleRadio = new System.Windows.Forms.RadioButton();
+            this.phoneNumber = new System.Windows.Forms.TextBox();
+            this.update = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -50,37 +50,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // ageText
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(200, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 30);
-            this.textBox1.TabIndex = 6;
+            this.ageText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageText.Location = new System.Drawing.Point(200, 187);
+            this.ageText.Name = "ageText";
+            this.ageText.Size = new System.Drawing.Size(100, 30);
+            this.ageText.TabIndex = 6;
             // 
-            // textBox2
+            // IDtext
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(200, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 30);
-            this.textBox2.TabIndex = 7;
+            this.IDtext.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDtext.Location = new System.Drawing.Point(200, 32);
+            this.IDtext.Name = "IDtext";
+            this.IDtext.Size = new System.Drawing.Size(246, 30);
+            this.IDtext.TabIndex = 7;
             // 
-            // textBox3
+            // nameText
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(200, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 30);
-            this.textBox3.TabIndex = 8;
+            this.nameText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameText.Location = new System.Drawing.Point(200, 86);
+            this.nameText.Name = "nameText";
+            this.nameText.Size = new System.Drawing.Size(246, 30);
+            this.nameText.TabIndex = 8;
             // 
-            // textBox4
+            // surnameText
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(200, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(246, 30);
-            this.textBox4.TabIndex = 9;
+            this.surnameText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surnameText.Location = new System.Drawing.Point(200, 134);
+            this.surnameText.Name = "surnameText";
+            this.surnameText.Size = new System.Drawing.Size(246, 30);
+            this.surnameText.TabIndex = 9;
             // 
             // dateTimePicker1
             // 
@@ -92,98 +92,105 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(35, 302);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1000, 350);
             this.dataGridView1.TabIndex = 11;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
-            // radioButton1
+            // femaleRadio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton1.Location = new System.Drawing.Point(329, 233);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 27);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Female";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.femaleRadio.AutoSize = true;
+            this.femaleRadio.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.femaleRadio.Location = new System.Drawing.Point(329, 233);
+            this.femaleRadio.Name = "femaleRadio";
+            this.femaleRadio.Size = new System.Drawing.Size(85, 27);
+            this.femaleRadio.TabIndex = 12;
+            this.femaleRadio.TabStop = true;
+            this.femaleRadio.Text = "Female";
+            this.femaleRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // maleRadio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(200, 233);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(68, 27);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Male";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.maleRadio.AutoSize = true;
+            this.maleRadio.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maleRadio.Location = new System.Drawing.Point(200, 233);
+            this.maleRadio.Name = "maleRadio";
+            this.maleRadio.Size = new System.Drawing.Size(68, 27);
+            this.maleRadio.TabIndex = 13;
+            this.maleRadio.TabStop = true;
+            this.maleRadio.Text = "Male";
+            this.maleRadio.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // phoneNumber
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(686, 89);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(246, 30);
-            this.textBox5.TabIndex = 15;
+            this.phoneNumber.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumber.Location = new System.Drawing.Point(686, 89);
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.Size = new System.Drawing.Size(246, 30);
+            this.phoneNumber.TabIndex = 15;
             // 
-            // button1
+            // update
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(842, 210);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "UPDATE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.update.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.update.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.update.FlatAppearance.BorderSize = 3;
+            this.update.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.update.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.update.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.Red;
+            this.update.Location = new System.Drawing.Point(842, 210);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(150, 50);
+            this.update.TabIndex = 16;
+            this.update.Text = "UPDATE";
+            this.update.UseVisualStyleBackColor = false;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
-            // button2
+            // delete
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(686, 210);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 50);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "DELETE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.delete.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.delete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.delete.FlatAppearance.BorderSize = 3;
+            this.delete.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.delete.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.Color.Red;
+            this.delete.Location = new System.Drawing.Point(686, 210);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(150, 50);
+            this.delete.TabIndex = 17;
+            this.delete.Text = "DELETE";
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
-            // button3
+            // add
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(530, 210);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 50);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "ADD";
-            this.button3.UseVisualStyleBackColor = false;
+            this.add.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.add.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.add.FlatAppearance.BorderSize = 3;
+            this.add.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.add.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.ForeColor = System.Drawing.Color.Red;
+            this.add.Location = new System.Drawing.Point(530, 210);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(150, 50);
+            this.add.TabIndex = 18;
+            this.add.Text = "ADD";
+            this.add.UseVisualStyleBackColor = false;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // label8
             // 
@@ -204,7 +211,6 @@
             this.label9.Size = new System.Drawing.Size(127, 23);
             this.label9.TabIndex = 20;
             this.label9.Text = "Phone Number";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -269,18 +275,18 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.add);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.update);
+            this.Controls.Add(this.phoneNumber);
+            this.Controls.Add(this.maleRadio);
+            this.Controls.Add(this.femaleRadio);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.surnameText);
+            this.Controls.Add(this.nameText);
+            this.Controls.Add(this.IDtext);
+            this.Controls.Add(this.ageText);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -292,18 +298,18 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ageText;
+        private System.Windows.Forms.TextBox IDtext;
+        private System.Windows.Forms.TextBox nameText;
+        private System.Windows.Forms.TextBox surnameText;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RadioButton femaleRadio;
+        private System.Windows.Forms.RadioButton maleRadio;
+        private System.Windows.Forms.TextBox phoneNumber;
+        private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

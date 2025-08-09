@@ -1,0 +1,11 @@
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.csproj.AssemblyReference.cache
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.Form1.resources
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.Properties.Resources.resources
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.csproj.GenerateResource.cache
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.csproj.CoreCompileInputs.cache
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\bin\Debug\myCsharpSqlProject.exe.config
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\bin\Debug\myCsharpSqlProject.exe
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\bin\Debug\myCsharpSqlProject.pdb
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.exe
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.pdb
+C:\Users\omemi\source\repos\myCsharpSqlProject\myCsharpSqlProject\obj\Debug\myCsharpSqlProject.exe.config
